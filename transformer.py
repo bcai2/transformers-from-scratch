@@ -1,3 +1,5 @@
+# Base implementation of a transformer, using the original architecture in "Attention Is All You Need".
+
 # %%
 import torch as t
 import torch.nn as nn
