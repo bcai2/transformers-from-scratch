@@ -5,6 +5,10 @@ This repository contains implementations of transformers from scratch, drawn hea
 - [MLAB-Transformers-From-Scratch - Redwood Research (refactored by Gabriel Mukobi)](https://github.com/mukobi/MLAB-Transformers-From-Scratch)
 - boilerplate templates with the help of Claude Sonnet 3.5
 
+## Transformer Architectures
+- [Original Architecture](./transformer.py)
+- [BERT](./mlab_tfs/bert/bert_student_bcai2.py)
+
 ## Setup
 ```bash
 python -m venv venv

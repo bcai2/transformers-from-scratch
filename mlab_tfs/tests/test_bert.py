@@ -10,7 +10,8 @@ from torch import nn
 from transformers.models.auto.tokenization_auto import AutoTokenizer
 from torchtyping import TensorType
 
-from mlab_tfs.bert import bert_student, bert_reference
+# NOTE: importing bert_student_bcai2 as bert_student. See the mukobi repo linked in the base README for a blank template.
+from mlab_tfs.bert import bert_student_bcai2 as bert_student, bert_reference
 from mlab_tfs.utils.mlab_utils import itpeek
 
 # Config
@@ -247,7 +248,7 @@ class TestGELU(MLTest):
 class TestBertMLP(MLTest):
     """Test BERT MLP layer functionality."""
 
-    @patch('mlab_tfs.bert.bert_student.GELU.forward')
+    @patch('mlab_tfs.bert.bert_student_bcai2.GELU.forward')
     def test_calls_user_gelu(self, patched_gelu):
         """Test that the user calls their own code."""
         hidden_size = 768
