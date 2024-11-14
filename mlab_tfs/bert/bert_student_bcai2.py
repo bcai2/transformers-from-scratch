@@ -1,7 +1,5 @@
 """
-Student implementation of BERT.
-
-Complete this file from top to bottom and pass the tests in ../tests/test_bert.py.
+Implementation of BERT, filled out from the MLAB student template.
 """
 
 import typing
